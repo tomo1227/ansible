@@ -37,7 +37,7 @@ pytest = "^8.3.4"
 pytest-cov = "^6.0.0"
 pytest-xdist = "^3.6.1"
 pytest-mock = "^3.14.0"
-ruff = "^0.9.9"
+ruff = "^0.9.10"
 fastapi = "^0.115.9"
 uvicorn = "^0.34.0"
 
