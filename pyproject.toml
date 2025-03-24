@@ -18,7 +18,7 @@ line-ending = "auto"
 docstring-code-format = false
 
 [project]
-name = "app"
+name = "ansible"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
