@@ -20,15 +20,9 @@
     "files.insertFinalNewline": true
   },
   "ruff.organizeImports": true,
-  "coverage-gutters.showGutterCoverage": true,
-  "coverage-gutters.showLineCoverage": true,
-  "coverage-gutters.showRulerCoverage": true,
-  "pythonTestExplorer.testFramework": "pytest",
-  "python.testing.unittestEnabled": false,
-  "python.testing.pytestEnabled": true,
+
   "autoDocstring.docstringFormat": "google",
   "python.createEnvironment.contentButton": "hide",
-  "python.analysis.inlayHints.pytestParameters": true,
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.inlayHints.functionReturnTypes": true,
   "python.analysis.typeCheckingMode": "standard",
@@ -41,8 +35,6 @@
   ],
   "python.languageServer": "Pylance",
   "python.analysis.indexing": true,
-  "python.testing.pytestArgs": ["tests"],
-  "testExplorer.useNativeTesting": false,
   "python.analysis.packageIndexDepths": [
     {
       "name": "",

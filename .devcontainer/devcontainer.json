@@ -13,9 +13,8 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "python.defaultInterpreterPath": "/usr/local/bin/",
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
         "python.terminal.activateEnvironment": false,
-        "python.testing.pytestPath": "/usr/local/bin/pytest",
         "ruff.path": ["/usr/local/bin/ruff"]
       },
       "extensions": [
@@ -25,7 +24,6 @@
         "ms-python.python",
         "charliermarsh.ruff",
         "ms-python.mypy-type-checker",
-        "littlefoxteam.vscode-python-test-adapter",
         "njpwerner.autodocstring",
         "KevinRose.vsc-python-indent",
         // json, yaml, toml formatter

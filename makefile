@@ -1,13 +1,3 @@
-# サーバー起動
-.PHONY: run
-run:
-	@uvicorn src.main:app --host 0.0.0.0 --port 80 --reload
-
-# テスト　&カバレッジ(XML)　VSCode上で可視化できる。
-.PHONY: test
-test:
-	pytest tests -n auto --cov=./ --cov-config=.coveragerc --cov-report=term-missing --cov-report=xml
-
 # コンテナの起動(ローカルでのみ)
 .PHONY: up
 up:
