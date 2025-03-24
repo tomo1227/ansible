@@ -1,17 +1,17 @@
 [tool.ruff]
 exclude = [
-    ".git",
-    ".mypy_cache",
-    ".pytest_cache",
-    ".ruff_cache",
-    ".vscode",
-    "__init__.py",
+  ".git",
+  ".mypy_cache",
+  ".pytest_cache",
+  ".ruff_cache",
+  ".vscode",
+  "__init__.py",
 ]
 line-length = 120
 indent-width = 4
 
 [tool.ruff.lint]
-ignore = ["A003", "D415", "E203", "S101", "D100", "D103", "S104"]
+ignore = ["A003", "D415", "E203", "S101", "D100", "D101", "D103", "S104"]
 select = ["A", "N", "E", "D", "W", "F", "I", "C90", "S"]
 
 [tool.ruff.lint.pydocstyle]
@@ -24,28 +24,16 @@ skip-magic-trailing-comma = false
 line-ending = "auto"
 docstring-code-format = false
 
-[tool.poetry]
-name = "src"
+[project]
+name = "app"
 version = "0.1.0"
-description = ""
-authors = ["Tomoki Ota <tomo.soccer1227@gmail.com>"]
+description = "Add your description here"
 readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ansible>=11.3.0",
+]
 
-[tool.poetry.dependencies]
-python = "^3.12"
-pytest = "^8.3.4"
-pytest-cov = "^6.0.0"
-pytest-xdist = "^3.6.1"
-pytest-mock = "^3.14.0"
-ruff = "^0.9.9"
-fastapi = "^0.115.9"
-uvicorn = "^0.34.0"
+[dependency-groups]
+dev = ["ruff>=0.9.10"]
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.pytest.ini_options]
-addopts = ["--import-mode=importlib"]
-pythonpath = "app"
-testpaths = ["tests"]
